@@ -16,3 +16,11 @@ The images in the project are currently hosted on [**Imgur**](https://imgur.com/
 
 You'll find the pictures used in the website are stored in an array under that page's component. Each index being a specific tab in that menu.
 
+## Contact me
+
+If you want to contact me for more information:
+
+E-Mail: maconholliman@gmail.com
+
+Please use [Github Issues](https://github.com/Macon-Holliman/crossing-void-hq/issues) for bug reports, feature requests, etc.
+
