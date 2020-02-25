@@ -1,0 +1,72 @@
+.App {
+  background-color: #2a2a2a;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.preload{
+  background: url(https://images.unsplash.com/photo-1575561723050-3a69691d9700?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80) no-repeat;
+	display: none;
+}
+
+.home{
+  display: contents;
+}
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  animation: chbg 30s infinite alternate;
+  background-attachment: fixed;
+  background-position: center;
+  transform: scale(1);
+}
+
+
+@keyframes chbg {
+  0% {
+    background: url(https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80); 
+    transform: scale(1);
+  background-size:cover;
+  background-position: center center;
+  }
+  45% {
+    background: url(https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80); 
+    transform: scale(1.1);
+  background-size:cover;
+  background-position: center center;
+  }
+  55% {
+    background: url(https://images.unsplash.com/photo-1575561723050-3a69691d9700?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80); 
+    transform: scale(1);
+  background-size:cover;
+  background-position: center center;
+  }
+  100% {
+    background: url(https://images.unsplash.com/photo-1575561723050-3a69691d9700?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80); 
+    transform: scale(1.1);
+  background-size:cover;
+  background-position: center center;
+  }
+}
+
+.wrapper-gradient{
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(rgba(27, 22, 53, 0.1), #271a2d70 95vh), radial-gradient(at center top, rgba(28, 22, 54, 0.17) 60%, #1f183a54 79%);
+  z-index: 0;
+}

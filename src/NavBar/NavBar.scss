@@ -1,0 +1,668 @@
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    width: 100%;
+    background-color: rgba(34, 34, 34, 0.55);
+    position: absolute;
+    z-index: 1; 
+    min-height: 29px;
+    max-height: 6vw;
+  }
+  
+  
+  .nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .nav-items>li{
+    position: relative;
+    padding: 0 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-family: oswald;
+    letter-spacing: .5px;
+    cursor: pointer;
+  }
+  
+  .nav-items>li:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: #c2c036;
+    transform: scaleX(0);
+    transition: 0.15s ease-in-out;
+  }
+  
+  .nav-items>li>a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .logo-wrapper{
+    position: absolute;
+    right: 0%;
+    left: 0%;
+    text-align: center;
+    pointer-events: none;
+  }
+  .logo{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px 15px;
+    pointer-events: all;
+    cursor: pointer;
+    position: relative;
+  
+    
+    &::before  {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 82px;
+      height: 2px;
+      background: #c2c036;
+      transform: scaleX(0);
+      transition: 0.3s ease-in-out;
+    }
+  
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 4px;
+      width: 82px;
+      height: 2px;
+      background: #c2c036;
+      transform: scaleX(0);
+      transition: 0.3s ease-in-out;
+    }
+  
+    &:hover {
+      
+      &::after {
+        transform: scaleX(1);
+      }
+      &::before {
+        transform: scaleX(1);
+      }
+    }
+  }
+  
+  
+  
+  .button-wrapper{
+    margin: 0 10px;
+  }
+  
+  .button{
+    margin: 20px 0;
+    background: none;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    font-size: 16px;
+    width: 81px;
+    height: 37px;
+  
+    &:hover {
+      .border {
+        background: #797830b0;
+      }
+      .hl-line {
+        stroke-dashoffset: -240;
+      }
+    }
+  }
+
+  .text{ 
+    line-height: 37px;
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    font-family: 'helvetica neue', helvetica, sans-serif;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .8px;
+  }
+  
+  .border{
+    fill: none;
+    stroke-width: 1;
+    background-color: rgba(190, 141, 169, 0.4);
+    background: #79783063;
+    transition: all 0.8s ease-in-out;
+  
+    
+    width: 81px;
+    height: 37px;
+  }
+  .background{
+    fill: rgba(0, 0, 0, 0);
+    stroke: #b2b02fd1;
+    transition: all 0.8s ease-in-out;
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+.user-options{
+    padding-right: 40px;
+  }
+  
+  
+  .socials{
+    padding-right: 40px;
+  }
+  .socials-wrapper{
+    margin: 0 10px;
+    width: 35px;
+    height: 35px;
+    font-family: oswald;
+    letter-spacing: .5px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .social{
+    margin: 20px 0;
+    background: none;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    font-size: 16px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+  
+  }
+  
+  .facebook{
+    background: url(https://i.imgur.com/GtOrqKK.png);
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+  
+    
+    transition: 0.3s ease-in-out;
+      
+  }
+  
+  .facebook:hover{
+  
+    transform: scale(1.2);
+  }
+  
+  
+  .info-buttons {
+    position: relative;
+    padding: 0 5px;
+    margin: 0 5px;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 2px;
+      background: #b31f73;
+      transform: scaleX(0);
+      transition: 0.3s ease-in-out;
+    }
+  
+    &:hover {
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+  
+  .ampersand-adjust{
+    font-size: 65%;
+  }
+  .ampersand-adjust-logo{
+    font-size: 90%;
+  }
+  
+  
+  
+  .word-swiper{
+      content: '';
+      position: relative;
+      left: 0;
+      right: 0;
+      width: 1px;
+      height: 100%;
+      font-size: 30px;
+      font-family: 'Oswald', sans-serif;
+      display: inline-block;
+      //background-color: #000;
+  }
+  
+  .swipe{
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    left: 0;
+    top: 0;
+    font-weight: normal;
+    overflow: hidden;
+    width: 200px;
+    font-family: 'Kaushan Script', cursive;
+    top: 5px;
+  
+  
+  }
+  
+  .swiper-wrapper{
+    position: absolute;
+    right: 0%;
+    left: 0%;
+    text-align: center;
+    pointer-events: none;
+  
+    &.left-swipe{
+      right: 55%;
+      left: 0%;
+      text-align: right;
+      direction: rtl;
+    }
+    &.right-swipe{
+      right: 0%;
+      left: 55%;
+      text-align: left;
+    }
+  }
+  
+  
+  .swipe-l:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    width: 100%;
+    width: 2px;
+    height: 45px;
+    background: #c2c036;
+  
+    animation: l-bar 30s infinite linear;
+  }
+  
+  
+  .swipe-r:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    width: 2px;
+    height: 45px;
+    background: #c2c036;
+  
+    animation: r-bar 30s infinite linear;
+  }
+  
+  .swipe-text-one{animation: one-slider 30s infinite linear;}
+  .swipe-text-two{animation: two-slider 30s infinite linear;}
+  .swipe-text-three{animation: three-slider 30s infinite linear;}
+  .swipe-text-four{animation: four-slider 30s infinite linear;}
+  .swipe-text-five{animation: five-slider 30s infinite linear;}
+  .swipe-text-six{animation: six-slider 30s infinite linear;}
+  .swipe-text-seven{animation: seven-slider 30s infinite linear;}
+  .swipe-text-eight{animation: eight-slider 30s infinite linear;}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .prevent-italicize-overlap{
+    margin-right: 4px;
+  }
+  
+  
+  
+  
+  .swiper{
+  display: contents;
+  }
+  
+  
+  @keyframes one-slider {
+    0% {
+      width: 0px;
+    }
+    1% {
+      width: 0px;
+    }
+    3% {
+      width: 130px;
+    }
+    9% {
+      width: 130px;
+    }
+    11% {
+      width: 0px;
+    }
+    100% {
+      width: 0px;
+    }
+  }
+  @keyframes two-slider {
+    0% {
+      width: 0px;
+    }
+    9% {
+      width: 0px;
+    }
+    11% {
+      width: 100px;
+    }
+    17% {
+      width: 100px;
+    }
+    19% {
+      width: 0px;
+    }
+    100% {
+      width: 0px;
+    }
+  }
+  
+  
+  @keyframes three-slider {
+    0% {
+      width: 0px;
+    }
+    17% {
+      width: 0px;
+    }
+    19% {
+      width: 108px;
+    }
+    25% {
+      width: 108px;
+    }
+    27% {
+      width: 0px;
+    }
+    100% {
+      width: 0px;
+    }
+  }
+  
+  
+  @keyframes four-slider {
+    0% {
+      width: 0px;
+    }
+    25% {
+      width: 0px;
+    }
+    27% {
+      width: 140px;
+    }
+    33% {
+      width: 140px;
+    }
+    35% {
+      width: 0px;
+    }
+    100% {
+      width: 0px;
+    }
+  }
+  
+  @keyframes five-slider {
+    0% {
+      width: 0px;
+    }
+    33% {
+      width: 0px;
+    }
+    35% {
+      width: 105px;
+    }
+    41% {
+      width: 105px;
+    }
+    43% {
+      width: 0px;
+    }
+    100% {
+      width: 0px;
+    }
+  }
+  
+  @keyframes six-slider {
+    0% {
+      width: 0px;
+    }
+    41% {
+      width: 0px;
+    }
+    43% {
+      width: 136px;
+    }
+    49% {
+      width: 136px;
+    }
+    51% {
+      width: 0px;
+    }
+    100% {
+      width: 0px;
+    }
+  }
+  
+  
+  @keyframes seven-slider {
+    0% {
+      width: 0px;
+    }
+    51% {
+      width: 0px;
+    }
+    53% {
+      width: 125px;
+    }
+    90% {
+      width: 125px;
+    }
+    95% {
+      width: 0px;
+    }
+    100% {
+      width: 0px;
+    }
+  }
+  
+  @keyframes eight-slider {
+    0% {
+      width: 0px;
+    }
+    51% {
+      width: 0px;
+    }
+    53% {
+      width: 103px;
+    }
+    90% {
+      width: 103px;
+    }
+    95% {
+      width: 0px;
+    }
+    100% {
+      width: 0px;
+    }
+  }
+  
+  
+  @keyframes l-bar {
+    0% {
+      width: 2px;
+      height: 45px;
+    }
+    53% {
+      height: 45px;
+      width: 2px;
+    }
+    55% {
+      height: 4px;
+      width: 2px;
+    }
+    57% {
+      height: 4px;
+      width: 140px;
+    }
+    85% {
+      height: 4px;
+      width: 140px;
+    }
+    87% {
+      height: 4px;
+      width: 2px;
+    }
+    89% {
+      height: 45px;
+      width: 2px;
+    }
+    100% {
+      height: 45px;
+      width: 2px;
+    }
+  }
+  @keyframes r-bar {
+    0% {
+      width: 2px;
+      height: 45px;
+    }
+    53% {
+      height: 45px;
+      width: 2px;
+    }
+    55% {
+      height: 4px;
+      width: 2px;
+    }
+    57% {
+      height: 4px;
+      width: 140px;
+    }
+    85% {
+      height: 4px;
+      width: 140px;
+    }
+    87% {
+      height: 4px;
+      width: 2px;
+    }
+    89% {
+      height: 45px;
+      width: 2px;
+    }
+    100% {
+      height: 45px;
+      width: 2px;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 800px) {
+    
+    .swiper-top{
+     // display: none;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .swiper-top{
+      &.logo{
+        display: none;
+      }
+
+    }
+    .logo-top{
+      pointer-events: none;
+    }
+
+    .nav-items{
+      padding-inline-start: 10px;
+    }
+    .socials {
+      padding-right: 10px;
+  }
+}
+
+
+
+@media (min-width: 290px) and (max-width: 790px) and (orientation:landscape) {
+
+  .swiper-top{
+   // display: none;
+    opacity: 1;
+    pointer-events: none;
+  }
+  .swiper-top{
+    &.logo{
+      display: block;
+    }
+
+  }
+  .swiper-top{
+    .word-swiper{
+      opacity: 0;
+    }
+  }
+  .logo-top{
+    pointer-events: all;
+  }
+
+}
+  
